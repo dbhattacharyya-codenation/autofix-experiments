@@ -52,9 +52,11 @@ public class Biconnectivity {
 					theBridges.add("(" + u + "," + v + ")");
 				++childrenCount;
 			}
-		}
+        }
 		if (p == -1)
-			isCutPoint = childrenCount >= 2;
+            isCutPoint = childrenCount >= 2;
+        System.out.println(childrenCount);
+        System.out.println(isCutPoint);
 		if (isCutPoint)
 			theCutPoints.add(u);
 		if (timeOfIn[u] == lowLinkData[u]) {
