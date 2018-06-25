@@ -1,0 +1,30 @@
+.idea/
+
+# Compiled class files
+*.class
+
+# IntelliJ
+out/
+
+# Gradle
+.gradle
+build/
+
+# Jar
+*.jar
+*.war
+*.ear
+
+gradlew
+gradlew.bat
+
+!gradle-wrapper.jar
+
+.stignore
+
+*.sh
+*.zip
+*.tmp
+venv/
+
+.DS_Store
