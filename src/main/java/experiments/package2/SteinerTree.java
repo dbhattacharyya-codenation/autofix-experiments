@@ -1,8 +1,20 @@
 package experiments.package2;
 
+import java.util.List;
+import java.util.Arrays;
+
 public class SteinerTree {
 
 	public static int minLengthSteinerTree(int[][] g, int[] verticesToConnect) {
+		int a = 100;
+        Long l = 6000L;
+        String str = "Dummy Again";
+        char c = 'd';
+        boolean b = false;
+        short sh = 2;
+        List<Integer> list = Arrays.asList(2,3,4);
+		System.out.println(list.get(1));
+		System.out.println(list.toArray()[2]);
 		int n = g.length;
 		int m = verticesToConnect.length;
 		if (m <= 1)

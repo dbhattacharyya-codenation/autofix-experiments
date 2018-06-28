@@ -28,3 +28,8 @@ gradlew.bat
 venv/
 
 .DS_Store
+
+# VSCode
+.classpath
+.project
+.settings/
