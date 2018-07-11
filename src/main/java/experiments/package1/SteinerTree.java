@@ -27,7 +27,12 @@ public class SteinerTree {
 			return 1;
 		}
 		else {
-			System.out.println("No return here");
+			if (b == true) {
+				return -1;
+			}
+			else {
+				System.out.println("No return here");
+			}
 		}
 
 		for (int k = 0; k < n; k++)
@@ -65,7 +70,12 @@ public class SteinerTree {
 		}
 
 		if (a == 11) {
-			return 0;
+			if (l == 5500L) {
+				return 0;
+			}
+			else {
+				return -1;
+			}
 		}
 		else if (l == 6000L) {
 			String dummyString = "Just a dummy";
