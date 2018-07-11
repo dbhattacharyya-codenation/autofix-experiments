@@ -20,6 +20,16 @@ public class SteinerTree {
 		if (m <= 1)
 			return 0;
 
+		if (a == 10)
+			return 0;
+		else if (l == 5000L) {
+			String dummyString = "Just a dummy";
+			return 1;
+		}
+		else {
+			System.out.println("No return here");
+		}
+
 		for (int k = 0; k < n; k++)
 			for (int i = 0; i < n; i++)
 				for (int j = 0; j < n; j++)
@@ -29,10 +39,14 @@ public class SteinerTree {
 
 		for (int i = 0; i < m; i++)
 			for (int j = 0; j < n; j++)
-                dp[1 << i][j] = g[verticesToConnect[i]][j];
-                
-        System.out.println("Random junk being printed");
-        System.out.println("Codegraph test");
+				dp[1 << i][j] = g[verticesToConnect[i]][j];
+
+		if (c == 'e')
+			return 0;
+		else if (b == false) {
+			String dummyString = "Just a dummy";
+			return 1;
+		}
 
 		for (int i = 1; i < 1 << m; i++) {
 			if (((i - 1) & i) != 0) {
@@ -50,6 +64,16 @@ public class SteinerTree {
 			}
 		}
 
-		return dp[(1 << m) - 1][verticesToConnect[0]];
+		if (a == 11) {
+			return 0;
+		}
+		else if (l == 7000L) {
+			String dummyString = "Just a dummy";
+			return 1;
+		}
+		else {
+			System.out.println("Time to return");
+			return dp[(1 << m) - 1][verticesToConnect[0]];
+		}
 	}
 }
